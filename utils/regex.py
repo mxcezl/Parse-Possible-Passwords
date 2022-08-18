@@ -12,7 +12,7 @@ class PasswordMatcher:
 
     def check_min_max(self) -> bool:
         if not self.min_length or self.min_length <= 0:
-            self.min_length = 0
+            self.min_length = ''
         if not self.max_length or self.max_length < self.min_length:
             self.max_length = ''
 
